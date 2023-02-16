@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react';
+import Contact from './components/Contact/Contact';
 import DotGroup from './components/DotGroup/DotGroup';
+import Footer from './components/Footer/Footer';
 import Landing from './components/Landing/Landing';
 import LineGradient from './components/LineGradient/LineGradient';
 import MySkills from './components/MySkills/MySkills';
 import Navbar from './components/Navbar/Navbar';
+import Projects from './components/Projects/Projects';
 import useMediaQuery from './hooks/useMediaQuery';
+
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -12,6 +16,7 @@ function App() {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
 
   useEffect(() => {
+    // eslint-disable-next-line
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
@@ -34,9 +39,17 @@ function App() {
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
-      <MySkills/>
+        <MySkills />
       </div>
       <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Projects />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Contact />
+      </div>
+     <Footer/>      
     </div>
   );
 }
