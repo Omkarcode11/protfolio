@@ -18,12 +18,12 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 
 function Navbar({ selectedPage, setSelectedPage, isTopOfPage }) {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
-  const navBackground = isTopOfPage ? '' : 'bg-yellow-400';
+  const navBackground = isTopOfPage ? '' : 'bg-black';
 
   const isAboveMediumScreens = useMediaQuery('(min-width:768px');
 
   return (
-    <nav className={`${navBackground}z-40 w-full fixed top-0 py-6`}>
+    <nav className={`${navBackground}z-40 w-full fixed top-0 bg-black py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-playfair text-3xl font-bold h-7">OM</h4>
         {/* {DESKTOP NAV} */}
