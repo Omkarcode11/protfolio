@@ -75,7 +75,7 @@ function Contact() {
           method="POST"
         >
           <input
-            className="w-full bg-blue font-semibold placeholder-opaque-black p-3 "
+            className="w-full bg-blue font-semibold rounded placeholder-opaque-black p-3 "
             type="text"
             placeholder="Name"
             {...register('name', {
@@ -91,7 +91,7 @@ function Contact() {
           )}
 
           <input
-            className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5 "
+            className="w-full bg-blue rounded font-semibold placeholder-opaque-black p-3 mt-5 "
             type="email"
             placeholder="EMAIL"
             {...register('email', {
@@ -106,7 +106,7 @@ function Contact() {
             </p>
           )}
           <textarea
-            className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5 "
+            className="w-full bg-blue font-semibold rounded placeholder-opaque-black p-3 mt-5 "
             type="text"
             placeholder="MESSAGE"
             row="5"
@@ -125,7 +125,7 @@ function Contact() {
 
           <button
             type="submit"
-            className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+            className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-200 rounded-xl"
           >
             SEND ME MESSAGE
           </button>
