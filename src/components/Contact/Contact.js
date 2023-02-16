@@ -20,7 +20,7 @@ function Contact() {
   return (
     <section id="contact" className="py-48">
       <motion.div
-        className='flex justify-end w-full'
+        className="flex justify-end w-full"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -68,7 +68,12 @@ function Contact() {
           }}
         ></motion.div>
 
-        <form target="_blank" onSubmit={onSubmit} action="https://formsubmit.co/omkarsonawaneomkar2@gmail.com" method="POST">
+        <form
+          target="_blank"
+          onSubmit={onSubmit}
+          action="https://formsubmit.co/73d19526d00cfd9f367fedd03849d6a4"
+          method="POST"
+        >
           <input
             className="w-full bg-blue font-semibold placeholder-opaque-black p-3 "
             type="text"
