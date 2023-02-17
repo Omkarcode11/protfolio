@@ -6,43 +6,35 @@ function SocialMediaIcons() {
     <div className="flex justify-center md:justify-start my-10 gap-7">
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.linkedin.com"
+        href="www.linkedin.com/in/omkar-sonawane-b75b05239"
         target="_blank"
         rel="noreferrer"
       >
-      <img alt="linked-link" src="../../assets/linkedin.png" />
+        <img alt="linked-link" src="../../assets/linkedin.png" />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.facbook.com"
+        href="https://www.facebook.com/omkar.sonawne.98"
         target="_blank"
         rel="noreferrer"
       >
-      <img alt="linked-link" src="../../assets/facebook.png" />
+        <img alt="linked-link" src="../../assets/facebook.png" />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.instagram.com"
+        href="https://www.instagram.com/_omkar_sonawane/"
         target="_blank"
         rel="noreferrer"
       >
-      <img alt="linked-link" src="../../assets/instagram.png" />
+        <img alt="linked-link" src="../../assets/instagram.png" />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.twitter.com"
+        href="https://github.com/Omkarcode11/"
         target="_blank"
         rel="noreferrer"
       >
-      <img alt="linked-link" src="../../assets/twitter.png" />
-      </a>
-      <a
-        className="hover:opacity-50 transition duration-500"
-        href="https://www.github.com"
-        target="_blank"
-        rel="noreferrer"
-      >
-      <img alt="linked-link" src="../../assets/github.png" />
+        <img alt="linked-link" src="../../assets/github.png" />
       </a>
     </div>
   );
