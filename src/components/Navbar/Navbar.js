@@ -25,7 +25,7 @@ function Navbar({ selectedPage, setSelectedPage, isTopOfPage }) {
   return (
     <nav className={`${navBackground}z-40 w-full fixed top-0 bg-black py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold h-7">OM</h4>
+        <h4 className="font-playfair text-3xl font-bold h-7">OMKAR</h4>
         {/* {DESKTOP NAV} */}
         {isAboveMediumScreens ? (
           <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">

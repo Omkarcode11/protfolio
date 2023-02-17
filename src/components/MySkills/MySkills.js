@@ -26,7 +26,8 @@ function MySkills() {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7 ">
-            HTML, CSS, and JS for the client-side and maintaining databases and infrastructure server-side.
+            HTML, CSS,JS,React,etc for the client-side and maintaining databases server-side with
+            express,Mysql,nodejs,etc.
           </p>
         </motion.div>
 
@@ -68,14 +69,12 @@ function MySkills() {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3 bg-gradient-rainbow p-2 md:bg-none">
-                Experience{' '}
+                Projects{' '}
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 md: md:bg-blue sm:bg-transparent   absolute right-0 top-0 z-[-1]"></div>
-            <p className="mt-3 md:mt-8">
-              Can a fresher get full-stack developer? Full Stack development is one of the in-demand for the Software IT
-              Industry in recent days. As a fresher, it would be an amazing career option as it might boost up your
-            </p>
+            <p className="mt-3 md:mt-8">I create some Full stack app with help of Nodejs , 
+            Node js help for create server side , MySql help to create Database ,React help's to create client side </p>
           </div>
         </motion.div>
         {/* {INNOVATIVE} */}
@@ -99,8 +98,7 @@ function MySkills() {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 md:bg-red sm:bg-transparent absolute right-0 top-0 z-[-1]"></div>
             <p className="mt-3 md:mt-8">
-              Can a fresher get full-stack developer? Full Stack development is one of the in-demand for the Software IT
-              Industry in recent days. As a fresher, it would be an amazing career option as it might boost up your
+             I create some small codepen that help for Innovative thinking and make Project more beautiful and user friendly 
             </p>
           </div>
         </motion.div>
@@ -125,8 +123,7 @@ function MySkills() {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 md:bg-yellow absolute right-0 top-0 z-[-1]"></div>
             <p className="mt-3 md:mt-8">
-              Can a fresher get full-stack developer? Full Stack development is one of the in-demand for the Software IT
-              Industry in recent days. As a fresher, it would be an amazing career option as it might boost up your
+             I love imagine New designs , with the help of Imaginative thinking I learn new technology's and it's exists me   
             </p>
           </div>
         </motion.div>
