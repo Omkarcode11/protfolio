@@ -53,7 +53,7 @@ function Contact() {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <img src="../assets/contact-image.jpeg" alt="contact" />
+          <img src="https://finwave.co/images/gif/Contact-1.gif" className='md:w-[2000px]' alt="contact" />
         </motion.div>
 
         <motion.div

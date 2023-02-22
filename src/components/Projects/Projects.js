@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion';
 import LineGradient from '../LineGradient/LineGradient';
+import projects from '../../assets/Project/projectArray';
+import { Link } from 'react-router-dom';
+
 const container = {
   hidden: {},
   visible: {
@@ -14,21 +17,27 @@ const projectVariate = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
+const ProjectGif = ({ title }) => {
+
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.split(' ').join('-').toLowerCase();
+  const projectTitle = title.split(' ');
+  console.log(projectTitle)
   return (
-    <motion.div variants={projectVariate} className="relative">
+     <Link to={`/project/${projectTitle[1]}`}>
+    <motion.div variants={projectVariate} className="relative my-2" >
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">MyProjects provides an easy and secure way to manage project files</p>
+        <p className="text-2xl font-playfair">{projectTitle[0]}</p>
+        <p className="mt-7">{projects[projectTitle[1]].description}</p>
       </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={`${projectTitle} img`} />
+      <div className='flex justify-center '>
+      <img src={`../assets/${projectTitle[0]}.gif`} className="bg-cover h-72 bg-center" alt={`${projectTitle.join('-')} img`} />
+      </div>
     </motion.div>
+     </Link>
   );
 };
-
 function Projects() {
+  console.log(projects)
   return (
     <section id="projects" className="pt-48 pb-48 ">
       <motion.div
@@ -66,17 +75,17 @@ function Projects() {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* Row ONE */}
-          <div className="flex justify-center text-center items-center p-10 bg-red max-w-[400px] max-h-[400px]  text-2xl font-playfair font-semibold">
+          <div className="flex justify-center text-center items-center p-10 bg-red max-w-[580px] max-h-[400px]  text-2xl font-playfair font-semibold">
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
-          <Project title="Project 6" />
-          <Project title="Project 7" />
-          <div className="flex justify-center text-center items-center p-10 bg-yellow max-w-[400px] max-h-[400px]  text-2xl font-playfair font-semibold">
+          {projects?.map((item, i) => {
+            return <ProjectGif title={item.name + ' ' + i} />;
+          })}
+          {/* <Project title="All-Chat 2" />
+          <Project title="MeTube 3" />
+          <Project title="Calculator 4" />
+          <Project title="Timer 5" /> */}
+          <div className="flex justify-center text-center items-center p-10 bg-yellow max-w-[580px] max-h-[400px]  text-2xl font-playfair font-semibold">
             SMOOTH USER EXPERIENCE
           </div>
         </motion.div>

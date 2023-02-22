@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Playfair+Display:wght@400;500&display=swap');
 
 /*
-! tailwindcss v3.2.6 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -676,6 +676,21 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -760,20 +775,28 @@ video {
   height: 1.75rem;
 }
 
+.h-\[600px\]{
+  height: 600px;
+}
+
 .h-full{
   height: 100%;
+}
+
+.h-40{
+  height: 10rem;
+}
+
+.h-28{
+  height: 7rem;
 }
 
 .h-80{
   height: 20rem;
 }
 
-.h-\[\]{
-  height: ;
-}
-
-.h-\[600px\]{
-  height: 600px;
+.h-72{
+  height: 18rem;
 }
 
 .max-h-\[400px\]{
@@ -808,8 +831,28 @@ video {
   width: 100%;
 }
 
+.w-80{
+  width: 20rem;
+}
+
 .max-w-\[400px\]{
   max-width: 400px;
+}
+
+.max-w-\[500px\]{
+  max-width: 500px;
+}
+
+.max-w-\[550px\]{
+  max-width: 550px;
+}
+
+.max-w-\[580px\]{
+  max-width: 580px;
+}
+
+.max-w-\[z400px\]{
+  max-width: z400px;
 }
 
 .basis-1\/2{
@@ -933,17 +976,20 @@ video {
   background-color: rgb(253 204 73 / var(--tw-bg-opacity));
 }
 
-.bg-amber-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-rainblue{
   background-image: linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%);
 }
 
 .bg-gradient-rainbow{
   background-image: linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%);
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .p-10{
@@ -1123,9 +1169,9 @@ video {
 }
 
 .transition{
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1335,6 +1381,10 @@ html,body,#root,.app{
 
   .md\:w-3\/4{
     width: 75%;
+  }
+
+  .md\:w-\[2000px\]{
+    width: 2000px;
   }
 
   .md\:max-w-\[600px\]{
