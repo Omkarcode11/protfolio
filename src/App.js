@@ -6,7 +6,6 @@ import Landing from './components/Landing/Landing';
 import LineGradient from './components/LineGradient/LineGradient';
 import MySkills from './components/MySkills/MySkills';
 import Navbar from './components/Navbar/Navbar';
-import ProjectPrev from './components/ProjectPrev/ProjectPrev';
 import Projects from './components/Projects/Projects';
 import useMediaQuery from './hooks/useMediaQuery';
 

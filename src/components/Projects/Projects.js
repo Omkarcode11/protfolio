@@ -1,7 +1,6 @@
-import { motion } from 'framer-motion';
-import LineGradient from '../LineGradient/LineGradient';
-import projects from '../../assets/Project/projectArray';
-import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
+import LineGradient from "../LineGradient/LineGradient";
+import projects from "../../assets/Project/projectArray";
 
 const container = {
   hidden: {},
@@ -18,26 +17,29 @@ const projectVariate = {
 };
 
 const ProjectGif = ({ title }) => {
-
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.split(' ');
-  console.log(projectTitle)
+  // const projectTitle = title.split(' ');
+  console.log(title);
   return (
-     <Link to={`/project/${projectTitle[1]}`}>
-    <motion.div variants={projectVariate} className="relative my-2" >
-      <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{projectTitle[0]}</p>
-        <p className="mt-7">{projects[projectTitle[1]].description}</p>
-      </div>
-      <div className='flex justify-center '>
-      <img src={`../assets/${projectTitle[0]}.gif`} className="bg-cover h-72 bg-center" alt={`${projectTitle.join('-')} img`} />
-      </div>
-    </motion.div>
-     </Link>
+    <a target="_blank" href={title.link} rel="noreferrer">
+      <motion.div variants={projectVariate} className="relative my-2">
+        <div className={overlayStyles}>
+          <p className="text-2xl font-playfair">{title.name}</p>
+          <p className="mt-7">{title.description}</p>
+        </div>
+        <div className="flex justify-center ">
+          <img
+            src={`../assets/${title.name}.gif`}
+            className="bg-cover h-72 bg-center"
+            alt={`${title.name} img`}
+          />
+        </div>
+      </motion.div>
+    </a>
   );
 };
 function Projects() {
-  console.log(projects)
+  console.log(projects);
   return (
     <section id="projects" className="pt-48 pb-48 ">
       <motion.div
@@ -60,8 +62,9 @@ function Projects() {
           </div>
         </div>
         <p className="mt mb-10 ">
-          MyProjects provides an easy and secure way to manage project files, share this information with project
-          stakeholders, and maintain a library of frequently
+          MyProjects provides an easy and secure way to manage project files,
+          share this information with project stakeholders, and maintain a
+          library of frequently
         </p>
       </motion.div>
 
@@ -78,13 +81,9 @@ function Projects() {
           <div className="flex justify-center text-center items-center p-10 bg-red max-w-[580px] max-h-[400px]  text-2xl font-playfair font-semibold">
             BEAUTIFUL USER INTERFACES
           </div>
-          {projects?.map((item, i) => {
-            return <ProjectGif title={item.name + ' ' + i} />;
-          })}
-          {/* <Project title="All-Chat 2" />
-          <Project title="MeTube 3" />
-          <Project title="Calculator 4" />
-          <Project title="Timer 5" /> */}
+          {projects?.map((item, i) => (
+            <ProjectGif title={item} key={i} />
+          ))}
           <div className="flex justify-center text-center items-center p-10 bg-yellow max-w-[580px] max-h-[400px]  text-2xl font-playfair font-semibold">
             SMOOTH USER EXPERIENCE
           </div>
